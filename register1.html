@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://genefo.com:8080" />
+<title>register1.html</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">register1.html</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/signup_regular</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>genefotest+1@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirmPassword</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>Fff</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>Nnn</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=genderID</td>
+	<td>Male</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>name=TOS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Please click the link in your email to verify your account!Click here to login!</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
