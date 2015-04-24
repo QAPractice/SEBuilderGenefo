@@ -1,0 +1,124 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://genefo.com:8080/signup_regular"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "email"
+      },
+      "text": "genefotest+49@gmail.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "password"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "email"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "password"
+      },
+      "text": "111111"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "confirmPassword"
+      },
+      "text": "111111"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstName"
+      },
+      "text": "Fff"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "lastName"
+      },
+      "text": "Nnn"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='col-sm-12']//select[.='Select OneMaleFemaleOther']//option[3]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='wrapper']/div[1]/div/form/div[9]/div[2]/div[1]/select//option[13]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='wrapper']/div[1]/div/form/div[9]/div[2]/div[2]/select//option[28]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='wrapper']/div[1]/div/form/div[9]/div[2]/div[3]/select//option[78]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "name",
+        "value": "TOS"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "submit"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//*[@class=\"alert alert-success ng-binding ng-scope\"] [@ng-bind-html=\"success_msg\"]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Please click the link in your email to verify your account!Click here to login!"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
